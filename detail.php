@@ -5,24 +5,6 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
 ?>
 
-
-"name": "Juan",
-        "surname": "Lopez",
-        "email": "user@email.com",
-        "phone": {
-            "area_code": "11",
-            "number": "4444-4444"
-        },
-        "identification": {
-            "type": "DNI",
-            "number": "12345678"
-        },
-        "address": {
-            "street_name": "Street",
-            "street_number": 123,
-            "zip_code": "5700"
-        }
-
 <?php
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
