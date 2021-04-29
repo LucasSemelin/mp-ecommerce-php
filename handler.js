@@ -1,13 +1,13 @@
 document.getElementById("botonCheckout").addEventListener("click", function() {
 
-    $('#checkout-btn').attr("disabled", true);
+    $('#botonCheckout').attr("disabled", true);
 
     console.log('handler.js')
     
     var orderData = {
-      quantity: document.getElementById("quantity").value,
-      description: document.getElementById("product-description").innerHTML,
-      price: document.getElementById("unit-price").innerHTML
+    //   quantity: document.getElementById("quantity").value,
+    //   description: document.getElementById("product-description").innerHTML,
+      price: document.getElementById("price").innerHTML
     };
       
     fetch("/preference.php", {
